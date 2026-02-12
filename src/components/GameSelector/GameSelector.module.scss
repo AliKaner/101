@@ -1,0 +1,121 @@
+.selector {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(ellipse at center, #1a3a2a 0%, #0d1f17 50%, #060e0a 100%);
+}
+
+.card {
+  text-align: center;
+  padding: 3rem;
+  background: rgba(15, 15, 30, 0.8);
+  border-radius: 1.5rem;
+  border: 0.0625rem solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 1.25rem 3.75rem rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(1.25rem);
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.logo {
+  width: 6rem;
+  height: auto;
+  filter: drop-shadow(0 0 1rem rgba(255, 255, 255, 0.2));
+  animation: float 3s ease-in-out infinite;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: 800;
+  color: #fbbf24;
+  text-shadow: 0 0.25rem 1rem rgba(251, 191, 36, 0.3);
+  letter-spacing: -0.05rem;
+  line-height: 1;
+}
+
+.decoration {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-bottom: 2.5rem;
+  height: 4.5rem;
+  align-items: center;
+  perspective: 1000px;
+}
+
+.decoTile {
+  width: 2.5rem;
+  height: 3.5rem;
+  border-radius: 0.25rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: scale(1.1) rotate(0deg) !important;
+    z-index: 10;
+  }
+}
+
+.subtitle {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.5);
+  margin-top: 0.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 0.125rem;
+  text-transform: uppercase;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-0.5rem); }
+}
+
+.buttons {
+  display: flex;
+  gap: 1.25rem;
+  justify-content: center;
+}
+
+.btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1.5rem 2.25rem;
+  background: linear-gradient(135deg, rgba(59, 130, 246, 0.15), rgba(59, 130, 246, 0.05));
+  border: 0.0625rem solid rgba(59, 130, 246, 0.3);
+  border-radius: 1rem;
+  color: #e2e8f0;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: inherit;
+
+  &:hover {
+    background: linear-gradient(135deg, rgba(59, 130, 246, 0.25), rgba(59, 130, 246, 0.1));
+    border-color: rgba(59, 130, 246, 0.6);
+    transform: translateY(-0.25rem);
+    box-shadow: 0 0.75rem 2rem rgba(59, 130, 246, 0.2);
+  }
+}
+
+.btnIcon {
+  font-size: 1.75rem;
+}
+
+.btnLabel {
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+
+.btnDesc {
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.4);
+}
