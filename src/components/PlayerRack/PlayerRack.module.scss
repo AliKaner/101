@@ -84,7 +84,14 @@
   flex-shrink: 0;
 }
 
-.left,
+.left {
+  flex-direction: column;
+  transform: rotate(90deg);
+  margin: 0 -11rem;
+}
+
 .right {
   flex-direction: column;
+  transform: rotate(-90deg);
+  margin: 0 -11rem;
 }
