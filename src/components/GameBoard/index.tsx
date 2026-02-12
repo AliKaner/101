@@ -186,7 +186,7 @@ const GameBoard = ({ actions, onBack }: GameBoardProps) => {
                 {gameState.okeyIndicator && (
                   <div className={styles.poolOkey}>
                     <img
-                      src={`/src/assets/images/tiles/${
+                      src={`/assets/images/tiles/${
                         ['', 'Yellow', 'Blue', 'Red', 'Black'][gameState.okeyIndicator.color]
                       }_${gameState.okeyIndicator.number}.png`}
                       alt="Okey"
@@ -196,7 +196,7 @@ const GameBoard = ({ actions, onBack }: GameBoardProps) => {
                   </div>
                 )}
                 <img
-                  src="/src/assets/images/tiles/BackTiles.png"
+                  src="/assets/images/tiles/BackTiles.png"
                   alt="Pool"
                   className={styles.poolImg}
                 />

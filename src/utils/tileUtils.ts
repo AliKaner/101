@@ -3,14 +3,14 @@ import { COLOR_MAP } from '../types';
 
 export function getTileImagePath(tile: Tile): string {
   if (tile.isJoker) {
-    return '/src/assets/images/tiles/FakeOkey.png';
+    return '/assets/images/tiles/FakeOkey.png';
   }
   const colorName = COLOR_MAP[tile.color] || 'Red';
-  return `/src/assets/images/tiles/${colorName}_${tile.number}.png`;
+  return `/assets/images/tiles/${colorName}_${tile.number}.png`;
 }
 
 export function getTileBackImagePath(): string {
-  return '/src/assets/images/tiles/BackTiles.png';
+  return '/assets/images/tiles/BackTiles.png';
 }
 
 export function getActionLabel(actionName: string): string {

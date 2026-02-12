@@ -19,7 +19,7 @@ const TileComponent = ({
   showBack = false,
 }: TileComponentProps) => {
   const imagePath = showBack 
-    ? '/src/assets/images/tiles/BackTiles.png' 
+    ? '/assets/images/tiles/BackTiles.png' 
     : getTileImagePath(tile);
 
   return (

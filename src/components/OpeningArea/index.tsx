@@ -28,7 +28,7 @@ const OpeningArea = ({
       <div className={styles.header}>
         <div className={styles.pool}>
           <img
-            src="/src/assets/images/tiles/BackTiles.png"
+            src="/assets/images/tiles/BackTiles.png"
             alt="Pool"
             className={styles.poolImg}
           />

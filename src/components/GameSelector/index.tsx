@@ -11,7 +11,7 @@ const GameSelector = ({ onSelect }: GameSelectorProps) => (
     <div className={styles.card}>
       <div className={styles.header}>
         <img
-          src="/src/assets/images/tiles/FakeOkey.png"
+          src="/assets/images/tiles/FakeOkey.png"
           alt="Okey Logo"
           className={styles.logo}
         />
@@ -24,7 +24,7 @@ const GameSelector = ({ onSelect }: GameSelectorProps) => (
         {DECO_TILES.map((t, i) => (
           <img
             key={i}
-            src={`/src/assets/images/tiles/${t}.png`}
+            src={`/assets/images/tiles/${t}.png`}
             className={styles.decoTile}
             alt=""
             style={{
