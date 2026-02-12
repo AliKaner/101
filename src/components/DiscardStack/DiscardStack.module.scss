@@ -13,8 +13,8 @@
 .bottom {
   top: 100%;
   left: 100%;
-  margin-top: 1.5rem;
-  margin-left: 1.5rem;
+  margin-top: 2.5rem;
+  margin-left: 1rem;
   right: auto;
   bottom: auto;
   transform: none;
@@ -23,31 +23,31 @@
 .right {
   bottom: 100%;
   left: 100%;
-  margin-bottom: 0.5rem;
-  margin-left: 1.5rem;
+  margin-bottom: 1.5rem;
+  margin-left: 1rem;
   top: auto;
   right: auto;
-  transform: none;
+  transform: rotate(-90deg);
 }
 
 .top {
   bottom: 100%;
   right: 100%;
-  margin-bottom: 0.5rem;
-  margin-right: 1.5rem;
+  margin-bottom: 1.5rem;
+  margin-right: 1rem;
   left: auto;
   top: auto;
-  transform: none;
+  transform: rotate(180deg);
 }
 
 .left {
   top: 100%;
   right: 100%;
-  margin-top: 1.5rem;
-  margin-right: 1.5rem;
+  margin-top: 2.5rem;
+  margin-right: 1rem;
   bottom: auto;
   left: auto;
-  transform: none;
+  transform: rotate(90deg);
 }
 
 
