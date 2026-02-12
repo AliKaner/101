@@ -1,0 +1,88 @@
+.discardStack {
+  position: absolute;
+  width: 3.75rem;
+  height: 5.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+  z-index: 20;
+  transition: all 0.3s ease;
+}
+
+.bottom {
+  top: 100%;
+  left: 100%;
+  margin-top: 1.5rem;
+  margin-left: 1.5rem;
+  right: auto;
+  bottom: auto;
+  transform: none;
+}
+
+.right {
+  bottom: 100%;
+  left: 100%;
+  margin-bottom: 0.5rem;
+  margin-left: 1.5rem;
+  top: auto;
+  right: auto;
+  transform: none;
+}
+
+.top {
+  bottom: 100%;
+  right: 100%;
+  margin-bottom: 0.5rem;
+  margin-right: 1.5rem;
+  left: auto;
+  top: auto;
+  transform: none;
+}
+
+.left {
+  top: 100%;
+  right: 100%;
+  margin-top: 1.5rem;
+  margin-right: 1.5rem;
+  bottom: auto;
+  left: auto;
+  transform: none;
+}
+
+
+.placeholder {
+  width: 2.5rem;
+  height: 3.5rem;
+  border: 2px dashed rgba(255, 255, 255, 0.2);
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(255, 255, 255, 0.2);
+  font-size: 0.75rem;
+}
+
+.tile {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  &:nth-last-child(1) {
+    transform: translate(0, 0);
+    z-index: 3;
+  }
+  &:nth-last-child(2) {
+    transform: translate(-2px, -2px);
+    z-index: 2;
+    opacity: 0.8;
+  }
+  &:nth-last-child(3) {
+    transform: translate(-4px, -4px);
+    z-index: 1;
+    opacity: 0.6;
+  }
+  &:nth-last-child(n + 4) {
+    display: none;
+  }
+}

@@ -1,0 +1,68 @@
+.openingGrid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.table {
+  display: flex;
+  flex-direction: column;
+  gap: 0.0625rem;
+  background: rgba(255, 255, 255, 0.02);
+  border-radius: 0.25rem;
+  padding: 0.0625rem;
+  border: 0.0625rem solid rgba(255, 255, 255, 0.06);
+}
+
+.header {
+  display: grid;
+  grid-template-columns: repeat(13, 1.375rem);
+  gap: 0.0625rem;
+}
+
+.headerCell {
+  width: 1.375rem;
+  height: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.4375rem;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.3);
+  font-family: 'JetBrains Mono', 'Fira Code', monospace;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: repeat(13, 1.375rem);
+  gap: 0.0625rem;
+}
+
+.cell {
+  width: 1.375rem;
+  height: 1.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.015);
+  border: 0.0625rem solid rgba(255, 255, 255, 0.04);
+  border-radius: 0.125rem;
+}
+
+.filled {
+  background: rgba(34, 197, 94, 0.08);
+  border-color: rgba(34, 197, 94, 0.2);
+  animation: cellAppear 0.3s ease;
+}
+
+@keyframes cellAppear {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
