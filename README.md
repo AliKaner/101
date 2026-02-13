@@ -1,8 +1,11 @@
-# 🎴 Okey 101 — Oyun Geçmişi İzleyici
+# Okey 101 — Oyun Geçmişi İzleyici
 
 Okey 101 oyunlarının geçmişini adım adım görselleştiren, React + TypeScript tabanlı bir playback uygulaması.
 
 2 ve 4 kişilik oyun verilerini yükleyerek hamleleri otomatik veya manuel olarak izleyebilir, açılan taşları, ıskarta yığınlarını ve kazananı görebilirsiniz.
+
+<img width="1898" height="901" alt="image" src="https://github.com/user-attachments/assets/5701c45b-ddb8-4a4a-bef5-ed51907b798f" />
+
 
 ## 🚀 Kurulum
 
