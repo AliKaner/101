@@ -74,6 +74,22 @@
   }
 }
 
+.btnTable {
+  background: rgba(99, 102, 241, 0.15);
+  border: 0.0625rem solid rgba(99, 102, 241, 0.3);
+  color: #a5b4fc;
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: 50%;
+
+  &:hover {
+    background: rgba(99, 102, 241, 0.3);
+    color: #fff;
+    transform: translateY(-0.0625rem);
+  }
+}
+
+
 .actionInfo {
   display: flex;
   flex-direction: column;

@@ -15,6 +15,7 @@ import styles from './GameBoard.module.scss';
 interface GameBoardProps {
   actions: GameAction[];
   onBack: () => void;
+  onShowTable: () => void;
 }
 
 const POSITION_MAP_2: Record<number, Position> = {
@@ -49,7 +50,7 @@ function splitGroups(groups: OpenedTile[][]): {
   return { regular, pairs };
 }
 
-const GameBoard = ({ actions, onBack }: GameBoardProps) => {
+const GameBoard = ({ actions, onBack, onShowTable }: GameBoardProps) => {
   const {
     gameState,
     currentAction,
@@ -61,6 +62,7 @@ const GameBoard = ({ actions, onBack }: GameBoardProps) => {
     resetGame,
     players,
   } = useGameEngine(actions);
+
 
   const { showWinner, clearWinner, setOnDismiss } = useWinner();
 
@@ -146,6 +148,8 @@ const GameBoard = ({ actions, onBack }: GameBoardProps) => {
 
   const renderGrid = (pos: Position) => <PlayerOpeningGrid groups={regularGroupsByPos[pos]} />;
 
+
+
   return (
     <div className={`${styles.gameBoard} ${is4Player ? styles.gameBoard4p : styles.gameBoard2p}`}>
       
@@ -157,6 +161,7 @@ const GameBoard = ({ actions, onBack }: GameBoardProps) => {
           onPrev={goToPrev}
           onReset={resetGame}
           onBack={onBack}
+          onShowTable={() => { if (isPlaying) togglePlayback(); onShowTable(); }}
           currentAction={currentAction}
         />
       </div>

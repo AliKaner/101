@@ -10,6 +10,7 @@ interface PlaybackControlsProps {
   onPrev: () => void;
   onReset: () => void;
   onBack: () => void;
+  onShowTable?: () => void;
   currentAction: GameAction | null;
 }
 
@@ -20,6 +21,7 @@ const PlaybackControls = ({
   onPrev,
   onReset,
   onBack,
+  onShowTable,
   currentAction,
 }: PlaybackControlsProps) => {
   return (
@@ -74,6 +76,21 @@ const PlaybackControls = ({
       >
         ↺
       </button>
+
+      {onShowTable && (
+        <>
+          <div className={styles.divider}></div>
+          <button
+            onClick={onShowTable}
+            className={`${styles.btn} ${styles.btnTable}`}
+            title="Tablo Görünümü"
+          >
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M3 3h18v2H3V3zm0 4h18v2H3V7zm0 4h18v2H3v-2zm0 4h18v2H3v-2zm0 4h18v2H3v-2z" />
+            </svg>
+          </button>
+        </>
+      )}
       {currentAction && (
         <div className={styles.actionInfo}>
           <span className={styles.actionPlayer}>
